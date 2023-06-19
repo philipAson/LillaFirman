@@ -14,6 +14,12 @@
 		0C02C5422A40346B00586EF2 /* LillaFirmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02C5412A40346B00586EF2 /* LillaFirmanTests.swift */; };
 		0C02C54C2A40346B00586EF2 /* LillaFirmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02C54B2A40346B00586EF2 /* LillaFirmanUITests.swift */; };
 		0C02C54E2A40346B00586EF2 /* LillaFirmanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02C54D2A40346B00586EF2 /* LillaFirmanUITestsLaunchTests.swift */; };
+		0C02C55C2A40371400586EF2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C02C55B2A40371400586EF2 /* FirebaseAuth */; };
+		0C02C55E2A40371400586EF2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C02C55D2A40371400586EF2 /* FirebaseFirestore */; };
+		0C02C5602A40371400586EF2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C02C55F2A40371400586EF2 /* FirebaseFirestoreSwift */; };
+		0C02C5622A4038C900586EF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C02C5612A4038C900586EF2 /* GoogleService-Info.plist */; };
+		0C02C5642A40457500586EF2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02C5632A40457500586EF2 /* Customer.swift */; };
+		0C02C5662A40490600586EF2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C02C5652A40490600586EF2 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,9 @@
 		0C02C5472A40346B00586EF2 /* LillaFirmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LillaFirmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C02C54B2A40346B00586EF2 /* LillaFirmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillaFirmanUITests.swift; sourceTree = "<group>"; };
 		0C02C54D2A40346B00586EF2 /* LillaFirmanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillaFirmanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C02C5612A4038C900586EF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C02C5632A40457500586EF2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		0C02C5652A40490600586EF2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C02C55C2A40371400586EF2 /* FirebaseAuth in Frameworks */,
+				0C02C55E2A40371400586EF2 /* FirebaseFirestore in Frameworks */,
+				0C02C5602A40371400586EF2 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +106,13 @@
 		0C02C52F2A40346A00586EF2 /* LillaFirman */ = {
 			isa = PBXGroup;
 			children = (
+				0C02C5612A4038C900586EF2 /* GoogleService-Info.plist */,
 				0C02C5302A40346A00586EF2 /* LillaFirmanApp.swift */,
 				0C02C5322A40346A00586EF2 /* ContentView.swift */,
 				0C02C5342A40346A00586EF2 /* Assets.xcassets */,
 				0C02C5362A40346A00586EF2 /* Preview Content */,
+				0C02C5632A40457500586EF2 /* Customer.swift */,
+				0C02C5652A40490600586EF2 /* Order.swift */,
 			);
 			path = LillaFirman;
 			sourceTree = "<group>";
@@ -143,6 +158,11 @@
 			dependencies = (
 			);
 			name = LillaFirman;
+			packageProductDependencies = (
+				0C02C55B2A40371400586EF2 /* FirebaseAuth */,
+				0C02C55D2A40371400586EF2 /* FirebaseFirestore */,
+				0C02C55F2A40371400586EF2 /* FirebaseFirestoreSwift */,
+			);
 			productName = LillaFirman;
 			productReference = 0C02C52D2A40346A00586EF2 /* LillaFirman.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 0C02C5242A40346A00586EF2;
+			packageReferences = (
+				0C02C55A2A40371400586EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0C02C52E2A40346A00586EF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +256,7 @@
 			files = (
 				0C02C5382A40346A00586EF2 /* Preview Assets.xcassets in Resources */,
 				0C02C5352A40346A00586EF2 /* Assets.xcassets in Resources */,
+				0C02C5622A4038C900586EF2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C02C5642A40457500586EF2 /* Customer.swift in Sources */,
 				0C02C5332A40346A00586EF2 /* ContentView.swift in Sources */,
+				0C02C5662A40490600586EF2 /* Order.swift in Sources */,
 				0C02C5312A40346A00586EF2 /* LillaFirmanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +603,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C02C55A2A40371400586EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C02C55B2A40371400586EF2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C02C55A2A40371400586EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0C02C55D2A40371400586EF2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C02C55A2A40371400586EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0C02C55F2A40371400586EF2 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C02C55A2A40371400586EF2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C02C5252A40346A00586EF2 /* Project object */;
 }

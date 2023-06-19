@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>600716863723-ekr4g26isf0sm0v831144b17dggmvkn7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.600716863723-ekr4g26isf0sm0v831144b17dggmvkn7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATqPoPc8uFJZPqH3cTtY-z7K2M4o-R67o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>600716863723</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.LillaFirman</string>
+	<key>PROJECT_ID</key>
+	<string>lillafirman-f55f7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lillafirman-f55f7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:600716863723:ios:96c8f4831d90dd4d7236ae</string>
+</dict>
+</plist>
