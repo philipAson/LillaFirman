@@ -45,7 +45,7 @@ struct MainView: View {
                 .animation(.easeIn(duration: 0.4), value: showMenu)
                 
                 
-                .navigationTitle("side bitch")
+                .navigationTitle("Lilla firman")
                 .toolbar {
                     
                     Button {

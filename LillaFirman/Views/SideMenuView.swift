@@ -10,7 +10,7 @@ import SwiftUI
 struct SideMenuView: View {
     var body: some View {
         VStack {
-            Text("vill me ha en bira")
+            Text("Menu")
                 .font(.title)
                 .foregroundColor(.white)
             
@@ -19,9 +19,18 @@ struct SideMenuView: View {
                 .background(Color.white)
                 .padding(.horizontal, 16)
             
-            Link(destination: URL(string: "https://falcon.se/produkter/specialbrew#")!) {
-                Text("pippi")
+            NavigationLink("\(Image(systemName: "list.clipboard")) Orders") {
+                CustomersView()
             }
+            .buttonStyle(MenuButton())
+            NavigationLink("\(Image(systemName: "person")) Customers") {
+                CustomersView()
+            }
+            .buttonStyle(MenuButton())
+            NavigationLink("\(Image(systemName: "gear")) Settings") {
+                CustomersView()
+            }
+            .buttonStyle(MenuButton())
             Spacer()
         }
         .padding(16)
